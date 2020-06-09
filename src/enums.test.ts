@@ -2,7 +2,7 @@ import { isStaff, Affiliation } from "./enums";
 
 describe("is staff tests", () => {
   it("returns true for staff", () => {
-    expect(isStaff("staff")).toEqual(true);
+    expect(isStaff(Affiliation.staff)).toEqual(true);
   });
   it("returns false for student", () => {
     expect(isStaff(Affiliation.student)).toEqual(false);
